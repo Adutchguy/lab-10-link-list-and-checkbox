@@ -4,13 +4,14 @@
   "description": "",
   "main": "link-list.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint ."
   },
   "keywords": [],
-  "author": "",
+  "author": "mdm_8@hotmail.com",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.15.3",
+    "expect": "^1.20.2",
     "mocha": "^3.4.2"
   }
 }
