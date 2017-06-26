@@ -1,11 +1,13 @@
 'use strict';
 
 class SLL {
+  // O of 1
   constructor(value){
     this.value = value;
     this.next = null;
   }
 
+  // O of N
   appendNode(node){
     if(!(node instanceof SLL))
       return null;
@@ -16,6 +18,7 @@ class SLL {
     this.next.appendNode(node);
   }
 
+  //O of N
   forEach(callback){
     let current = this;
     while(current){
@@ -24,6 +27,7 @@ class SLL {
     }
   }
 
+  //O of N
   findMiddle(){
     let slow, fast;
     slow = fast = this;
@@ -34,6 +38,7 @@ class SLL {
     return slow;
   }
 
+  //O of N
   removeNode(node){
     if(this === null) return;
 
@@ -47,6 +52,7 @@ class SLL {
     }
   }
 
+  // ) of N
   reverse(){
     if(!this.next) return;
     let current = this;
