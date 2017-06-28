@@ -35,7 +35,7 @@ class SLL {
       slow = slow.next;
       fast = fast.next.next;
     }
-    return slow;
+    return slow.value;
   }
 
   //O of N
